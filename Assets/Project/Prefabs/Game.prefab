@@ -1,0 +1,822 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2103403917935467354
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2103403917935467355}
+  - component: {fileID: 2103403917935467352}
+  m_Layer: 0
+  m_Name: Game
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2103403917935467355
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2103403917935467354}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.6292461, y: -0.041058734, z: -7.73091}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2103403917935467352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2103403917935467354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 997d3008cdbf48d3943c81e034cb4963, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dependencies:
+    upgradesData:
+      upgradesData:
+      - weaponType: 0
+        weaponUpgradeCost: 10000
+        ammoUpgrades:
+        - value: 10
+          cost: 10
+        - value: 12
+          cost: 15
+        - value: 14
+          cost: 20
+        - value: 16
+          cost: 50
+        - value: 18
+          cost: 100
+        - value: 20
+          cost: 150
+        - value: 22
+          cost: 300
+        - value: 25
+          cost: 600
+        - value: 28
+          cost: 800
+        - value: 31
+          cost: 1000
+        - value: 35
+          cost: 1200
+        - value: 39
+          cost: 1500
+        - value: 43
+          cost: 1800
+        - value: 45
+          cost: 2000
+        - value: 50
+          cost: 2500
+        radiusUpgrade:
+        - value: 0.35
+          cost: 10
+        - value: 0.4
+          cost: 15
+        - value: 0.425
+          cost: 20
+        - value: 0.45
+          cost: 50
+        - value: 0.5
+          cost: 100
+        - value: 0.55
+          cost: 150
+        - value: 0.6
+          cost: 300
+        - value: 0.65
+          cost: 600
+        - value: 0.7
+          cost: 800
+        - value: 0.75
+          cost: 1000
+        - value: 0.8
+          cost: 1200
+        - value: 0.85
+          cost: 1500
+        - value: 0.9
+          cost: 1800
+        - value: 0.95
+          cost: 2000
+        - value: 1
+          cost: 2500
+        fireRateUpgrade:
+        - value: 1
+          cost: 10
+        - value: 0.95
+          cost: 15
+        - value: 0.9
+          cost: 20
+        - value: 0.85
+          cost: 50
+        - value: 0.8
+          cost: 100
+        - value: 0.75
+          cost: 150
+        - value: 0.7
+          cost: 300
+        - value: 0.65
+          cost: 600
+        - value: 0.6
+          cost: 800
+        - value: 0.55
+          cost: 1000
+        - value: 0.5
+          cost: 1200
+        - value: 0.45
+          cost: 1500
+        - value: 0.4
+          cost: 1800
+        - value: 0.35
+          cost: 2000
+        - value: 0.3
+          cost: 2500
+      - weaponType: 1
+        weaponUpgradeCost: 75000
+        ammoUpgrades:
+        - value: 12
+          cost: 20
+        - value: 14
+          cost: 50
+        - value: 16
+          cost: 100
+        - value: 18
+          cost: 200
+        - value: 20
+          cost: 400
+        - value: 22
+          cost: 500
+        - value: 24
+          cost: 1000
+        - value: 26
+          cost: 1500
+        - value: 28
+          cost: 2000
+        - value: 30
+          cost: 3000
+        - value: 33
+          cost: 4000
+        - value: 35
+          cost: 5000
+        - value: 37
+          cost: 6000
+        - value: 40
+          cost: 7000
+        - value: 55
+          cost: 10000
+        radiusUpgrade:
+        - value: 0.5
+          cost: 20
+        - value: 0.55
+          cost: 50
+        - value: 0.6
+          cost: 100
+        - value: 0.65
+          cost: 200
+        - value: 0.7
+          cost: 400
+        - value: 0.75
+          cost: 500
+        - value: 0.8
+          cost: 1000
+        - value: 0.85
+          cost: 1500
+        - value: 0.9
+          cost: 2000
+        - value: 0.95
+          cost: 3000
+        - value: 1
+          cost: 4000
+        - value: 1.05
+          cost: 5000
+        - value: 1.1
+          cost: 6000
+        - value: 1.15
+          cost: 7000
+        - value: 1.2
+          cost: 10000
+        fireRateUpgrade:
+        - value: 1.2
+          cost: 20
+        - value: 1.15
+          cost: 50
+        - value: 1.1
+          cost: 100
+        - value: 1.05
+          cost: 200
+        - value: 1
+          cost: 400
+        - value: 0.9
+          cost: 500
+        - value: 0.85
+          cost: 1000
+        - value: 0.8
+          cost: 1500
+        - value: 0.75
+          cost: 2000
+        - value: 0.7
+          cost: 3000
+        - value: 0.65
+          cost: 4000
+        - value: 0.6
+          cost: 5000
+        - value: 0.55
+          cost: 6000
+        - value: 0.5
+          cost: 7000
+        - value: 0.4
+          cost: 10000
+      - weaponType: 2
+        weaponUpgradeCost: 100000
+        ammoUpgrades:
+        - value: 6
+          cost: 50
+        - value: 7
+          cost: 100
+        - value: 8
+          cost: 200
+        - value: 9
+          cost: 400
+        - value: 10
+          cost: 800
+        - value: 11
+          cost: 1600
+        - value: 12
+          cost: 3200
+        - value: 13
+          cost: 6400
+        - value: 14
+          cost: 12800
+        - value: 15
+          cost: 25600
+        - value: 16
+          cost: 51200
+        - value: 17
+          cost: 100000
+        - value: 19
+          cost: 150000
+        - value: 22
+          cost: 200000
+        - value: 25
+          cost: 300000
+        radiusUpgrade:
+        - value: 2.5
+          cost: 50
+        - value: 2.6
+          cost: 100
+        - value: 2.7
+          cost: 200
+        - value: 2.8
+          cost: 400
+        - value: 2.9
+          cost: 800
+        - value: 3
+          cost: 1600
+        - value: 3.1
+          cost: 3200
+        - value: 3.2
+          cost: 6400
+        - value: 3.3
+          cost: 12800
+        - value: 3.4
+          cost: 25600
+        - value: 3.5
+          cost: 51200
+        - value: 3.6
+          cost: 100000
+        - value: 3.7
+          cost: 150000
+        - value: 3.8
+          cost: 200000
+        - value: 4
+          cost: 300000
+        fireRateUpgrade:
+        - value: 2
+          cost: 50
+        - value: 1.95
+          cost: 100
+        - value: 1.9
+          cost: 200
+        - value: 1.85
+          cost: 400
+        - value: 1.8
+          cost: 800
+        - value: 1.7
+          cost: 1600
+        - value: 1.65
+          cost: 3200
+        - value: 1.6
+          cost: 6400
+        - value: 1.5
+          cost: 12800
+        - value: 1.45
+          cost: 25600
+        - value: 1.4
+          cost: 51200
+        - value: 1.3
+          cost: 100000
+        - value: 1.2
+          cost: 150000
+        - value: 1.1
+          cost: 200000
+        - value: 1
+          cost: 300000
+      - weaponType: 3
+        weaponUpgradeCost: 400000
+        ammoUpgrades:
+        - value: 40
+          cost: 100
+        - value: 50
+          cost: 200
+        - value: 60
+          cost: 500
+        - value: 70
+          cost: 1000
+        - value: 80
+          cost: 3000
+        - value: 100
+          cost: 5000
+        - value: 110
+          cost: 10000
+        - value: 120
+          cost: 20000
+        - value: 130
+          cost: 50000
+        - value: 140
+          cost: 100000
+        - value: 150
+          cost: 200000
+        - value: 160
+          cost: 400000
+        - value: 170
+          cost: 500000
+        - value: 180
+          cost: 700000
+        - value: 200
+          cost: 1000000
+        radiusUpgrade:
+        - value: 1
+          cost: 100
+        - value: 1.1
+          cost: 200
+        - value: 1.2
+          cost: 500
+        - value: 1.3
+          cost: 1000
+        - value: 1.4
+          cost: 3000
+        - value: 1.5
+          cost: 5000
+        - value: 1.6
+          cost: 10000
+        - value: 1.7
+          cost: 20000
+        - value: 1.8
+          cost: 50000
+        - value: 1.9
+          cost: 100000
+        - value: 2
+          cost: 200000
+        - value: 2.1
+          cost: 400000
+        - value: 2.2
+          cost: 500000
+        - value: 2.3
+          cost: 700000
+        - value: 2.5
+          cost: 1000000
+        fireRateUpgrade:
+        - value: 0.4
+          cost: 100
+        - value: 0.39
+          cost: 200
+        - value: 0.37
+          cost: 500
+        - value: 0.35
+          cost: 1000
+        - value: 0.34
+          cost: 3000
+        - value: 0.33
+          cost: 5000
+        - value: 0.32
+          cost: 10000
+        - value: 0.3
+          cost: 20000
+        - value: 0.29
+          cost: 50000
+        - value: 0.27
+          cost: 100000
+        - value: 0.26
+          cost: 200000
+        - value: 0.25
+          cost: 400000
+        - value: 0.24
+          cost: 500000
+        - value: 0.22
+          cost: 700000
+        - value: 0.2
+          cost: 1000000
+      - weaponType: 4
+        weaponUpgradeCost: 600000
+        ammoUpgrades:
+        - value: 150
+          cost: 500
+        - value: 200
+          cost: 1000
+        - value: 250
+          cost: 2000
+        - value: 300
+          cost: 5000
+        - value: 330
+          cost: 10000
+        - value: 350
+          cost: 20000
+        - value: 400
+          cost: 50000
+        - value: 500
+          cost: 100000
+        - value: 600
+          cost: 200000
+        - value: 700
+          cost: 500000
+        - value: 800
+          cost: 1000000
+        - value: 900
+          cost: 2000000
+        - value: 1000
+          cost: 5000000
+        - value: 1500
+          cost: 50000000
+        - value: 2000
+          cost: 1000000000
+        radiusUpgrade:
+        - value: 1.5
+          cost: 500
+        - value: 1.6
+          cost: 1000
+        - value: 1.7
+          cost: 2000
+        - value: 1.8
+          cost: 5000
+        - value: 1.9
+          cost: 10000
+        - value: 2
+          cost: 20000
+        - value: 2.1
+          cost: 50000
+        - value: 2.2
+          cost: 100000
+        - value: 2.3
+          cost: 200000
+        - value: 2.4
+          cost: 500000
+        - value: 2.5
+          cost: 1000000
+        - value: 2.6
+          cost: 2000000
+        - value: 2.7
+          cost: 5000000
+        - value: 1
+          cost: 50000000
+        - value: 1.2
+          cost: 1000000000
+        fireRateUpgrade:
+        - value: 0.2
+          cost: 500
+        - value: 0.17
+          cost: 1000
+        - value: 0.15
+          cost: 2000
+        - value: 0.13
+          cost: 5000
+        - value: 0.12
+          cost: 10000
+        - value: 0.11
+          cost: 20000
+        - value: 0.1
+          cost: 50000
+        - value: 0.09
+          cost: 100000
+        - value: 0.08
+          cost: 200000
+        - value: 0.07
+          cost: 500000
+        - value: 0.06
+          cost: 1000000
+        - value: 0.05
+          cost: 2000000
+        - value: 0.04
+          cost: 5000000
+        - value: 0.03
+          cost: 50000000
+        - value: 0.01
+          cost: 1000000000
+    wallConfig:
+      sprites:
+      - {fileID: 21300000, guid: f714c680ddf9240768d8496bd45f1e94, type: 3}
+      - {fileID: 21300000, guid: 865439cf27142402b97d415045529851, type: 3}
+      - {fileID: 21300000, guid: 56008d2435e83c4418ae57586a3976fb, type: 3}
+      - {fileID: 21300000, guid: 6498149a9d5f0da4fa372ce0e6495e4c, type: 3}
+      - {fileID: 21300000, guid: 084217eae5bf56c419e71ff5a8a595c8, type: 3}
+      - {fileID: 21300000, guid: d63b8e61c12efa14f866cba17b798823, type: 3}
+      - {fileID: 21300000, guid: 271aafa49a23c804b9bae9d17d74978c, type: 3}
+      - {fileID: 21300000, guid: ecfff3106104c0b469f4573c940b36d9, type: 3}
+      - {fileID: 21300000, guid: 20efbc1420572c7459d63b7f47b18e96, type: 3}
+      - {fileID: 21300000, guid: 5137e7e9b1970f74cb844c80aa3d7fde, type: 3}
+      - {fileID: 21300000, guid: acebfdf6ca4e144e2bf796b3c9cd11b4, type: 3}
+      - {fileID: 21300000, guid: c6198ba7916667a46828b142caeaada8, type: 3}
+      - {fileID: 21300000, guid: 82234b1001aa24c4ab59080ceb1a6621, type: 3}
+      - {fileID: 21300000, guid: 6498149a9d5f0da4fa372ce0e6495e4c, type: 3}
+      - {fileID: 21300000, guid: 6288148970d5c0045b5344f1739170e5, type: 3}
+      - {fileID: 21300000, guid: 7bda5ed1a6a58c24ab570ceff4581176, type: 3}
+      - {fileID: 21300000, guid: ae55610b7faf1854d8f2ceecea26a57f, type: 3}
+      - {fileID: 21300000, guid: eca14ead046817e41a6dc8f3e5cc8409, type: 3}
+      - {fileID: 21300000, guid: 38cd7cb390cc6784b829bd7bcb492b3b, type: 3}
+      - {fileID: 21300000, guid: cf452310c5cde3249ac75fceed2ab819, type: 3}
+      - {fileID: 21300000, guid: db1388970c1d1c849b17741521a09586, type: 3}
+      - {fileID: 21300000, guid: eb86f89ccfb00124cbc6684daf4f73b0, type: 3}
+      - {fileID: 21300000, guid: 29955065b8e638e4e963ec08c1af1f62, type: 3}
+      - {fileID: 21300000, guid: db83b3384451dd84db9b1aa41a1a5efd, type: 3}
+      - {fileID: 21300000, guid: 756344eaacea2cf42a1729947df53eb2, type: 3}
+      - {fileID: 21300000, guid: 36c1842917e2e7b4aa11e827cc7542f8, type: 3}
+      - {fileID: 21300000, guid: 1039880ce6b98d7419fb77793f97562d, type: 3}
+      - {fileID: 21300000, guid: a0769adfb1cccd349a3f005d1764a5db, type: 3}
+      - {fileID: 21300000, guid: 28a8908f3af9d404dae3610a5916d0a6, type: 3}
+      - {fileID: 21300000, guid: d7555294cd7acaf42a01fb93bbae7274, type: 3}
+      - {fileID: 21300000, guid: 3d79769affb4eab4abce33dd064dbe71, type: 3}
+      - {fileID: 21300000, guid: 81245cc6c8596d64db19df5ddff58ccb, type: 3}
+      - {fileID: 21300000, guid: ef84d619f91e9cf42a3976d595537be3, type: 3}
+      - {fileID: 21300000, guid: 8e58cc8fb0aea004abe9c1cfce11e520, type: 3}
+      pivot: {fileID: 0}
+      shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+      cubeOffset: 0.204
+      yRotationRandomRange: 15
+      cubeConfig:
+        cubePrefab: {fileID: 8421157836594002360, guid: 9535c47ff91da3046bccc6c95e78e5a6, type: 3}
+        defaultHealth: 10
+        fallCubeLayer:
+          layerIndex: 6
+        activeCubeLayer:
+          layerIndex: 7
+        damageFadeTime: 0.23
+        damageIdleTime: 0.2
+        targetDamageColor: {r: 1, g: 0.8528302, b: 0.8528302, a: 1}
+        playingDamageColorPercent: 0.8
+    weaponReferences:
+      weapons:
+        data:
+        - Key: 0
+          Value:
+            shootAnimation: {fileID: 0}
+            weaponSlaveAnchor: {fileID: 0}
+            slaveForce: {x: -2, y: 2.3, z: -1.5}
+            maxForceMultiplier: 2
+            RecoilMinAngle: 0
+            RecoilMaxAngle: 0
+            slaveLifeTime: 3
+            bulletReleaseParticles: {fileID: 0}
+            bulletReleaseAnchor: {fileID: 0}
+            weaponGameObject: {fileID: 0}
+            slavePrefab: {fileID: 1299227159659770290, guid: 9e250292f26dd144eb3a4f62d226a34a, type: 3}
+            bulletConfig:
+              damage: 60
+              lifeTime: 2
+              speed: 54
+              prefab: {fileID: 1494734145573426168, guid: ff1dd12be8bd92844a7e45b0cfcaf474, type: 3}
+              hitPhysicsForce: 5
+              registerLayer:
+                serializedVersion: 2
+                m_Bits: 640
+        - Key: 1
+          Value:
+            shootAnimation: {fileID: 0}
+            weaponSlaveAnchor: {fileID: 0}
+            slaveForce: {x: -1.6, y: 1.4, z: 2.5}
+            maxForceMultiplier: 1.5
+            RecoilMinAngle: 0
+            RecoilMaxAngle: 0
+            slaveLifeTime: 4
+            bulletReleaseParticles: {fileID: 0}
+            bulletReleaseAnchor: {fileID: 0}
+            weaponGameObject: {fileID: 0}
+            slavePrefab: {fileID: 1299227159659770290, guid: 9e250292f26dd144eb3a4f62d226a34a, type: 3}
+            bulletConfig:
+              damage: 100
+              lifeTime: 2
+              speed: 65
+              prefab: {fileID: 1494734145573426168, guid: ff1dd12be8bd92844a7e45b0cfcaf474, type: 3}
+              hitPhysicsForce: 7
+              registerLayer:
+                serializedVersion: 2
+                m_Bits: 640
+        - Key: 2
+          Value:
+            shootAnimation: {fileID: 0}
+            weaponSlaveAnchor: {fileID: 0}
+            slaveForce: {x: -0.2, y: 0.5, z: 3}
+            maxForceMultiplier: 2.1
+            RecoilMinAngle: 0
+            RecoilMaxAngle: 0
+            slaveLifeTime: 4
+            bulletReleaseParticles: {fileID: 0}
+            bulletReleaseAnchor: {fileID: 0}
+            weaponGameObject: {fileID: 0}
+            slavePrefab: {fileID: 5406534850114340148, guid: 8af2c77cdfad8774eb78e773af517419, type: 3}
+            bulletConfig:
+              damage: 15
+              lifeTime: 2
+              speed: 90
+              prefab: {fileID: 2719688556028805753, guid: 7a0d32a012ab38a44afa81fb6a326192, type: 3}
+              hitPhysicsForce: 6
+              registerLayer:
+                serializedVersion: 2
+                m_Bits: 640
+        - Key: 3
+          Value:
+            shootAnimation: {fileID: 0}
+            weaponSlaveAnchor: {fileID: 0}
+            slaveForce: {x: -1.91, y: 2.49, z: 1.43}
+            maxForceMultiplier: 2
+            RecoilMinAngle: 0
+            RecoilMaxAngle: 0
+            slaveLifeTime: 3
+            bulletReleaseParticles: {fileID: 0}
+            bulletReleaseAnchor: {fileID: 0}
+            weaponGameObject: {fileID: 0}
+            slavePrefab: {fileID: 1299227159659770290, guid: 9e250292f26dd144eb3a4f62d226a34a, type: 3}
+            bulletConfig:
+              damage: 8
+              lifeTime: 2
+              speed: 45
+              prefab: {fileID: 1494734145573426168, guid: ff1dd12be8bd92844a7e45b0cfcaf474, type: 3}
+              hitPhysicsForce: 6
+              registerLayer:
+                serializedVersion: 2
+                m_Bits: 640
+        - Key: 4
+          Value:
+            shootAnimation: {fileID: 0}
+            weaponSlaveAnchor: {fileID: 0}
+            slaveForce: {x: 1, y: 0, z: 0}
+            maxForceMultiplier: 2.17
+            RecoilMinAngle: 0
+            RecoilMaxAngle: 0
+            slaveLifeTime: 4
+            bulletReleaseParticles: {fileID: 0}
+            bulletReleaseAnchor: {fileID: 0}
+            weaponGameObject: {fileID: 0}
+            slavePrefab: {fileID: 1299227159659770290, guid: 9e250292f26dd144eb3a4f62d226a34a, type: 3}
+            bulletConfig:
+              damage: 17
+              lifeTime: 2
+              speed: 70
+              prefab: {fileID: 1494734145573426168, guid: ff1dd12be8bd92844a7e45b0cfcaf474, type: 3}
+              hitPhysicsForce: 7
+              registerLayer:
+                serializedVersion: 2
+                m_Bits: 640
+      hitEffectPrefab: {fileID: 9201679998871236964, guid: 1af89a1ddadde1142bea2e04a7b2938e, type: 3}
+    crosshairReferences:
+      camera: {fileID: 0}
+      crosshairCanvasRect: {fileID: 0}
+      crosshairDragSpeed: 15
+      joystick: {fileID: 0}
+      crosshairTransform: {fileID: 0}
+      handTransform: {fileID: 0}
+    cameraDependencies:
+      cameraCorner: {fileID: 0}
+    converterDependencies:
+      cubeConvertArea: {fileID: 0}
+      gravityPivot: {fileID: 0}
+      convertAreaGravityForce: 400
+      convertingObjects:
+      - gameObject: {fileID: 8920675540007656246, guid: dec47caedb224a8439e38dfadf9de44a, type: 3}
+        convertChance: 0.06
+        cost: 5
+      - gameObject: {fileID: 4265420608243294217, guid: 3816a406c28965f4bb44ccb3a8b2afd1, type: 3}
+        convertChance: 0.15
+        cost: 3
+      - gameObject: {fileID: 4055401172577581664, guid: e5971473cb3934248a018f5c5bb1d39a, type: 3}
+        convertChance: 1
+        cost: 1
+      maxActiveObjects: 90
+      convertParticles: {fileID: 1177679450630112835, guid: 0870fa15130421d4b8dc9faad24af795, type: 3}
+    uiDependencies:
+      upgradeButtons:
+      - button: {fileID: 0}
+        upgradeType: 0
+        cost: {fileID: 0}
+        upgradeBackground: {fileID: 0}
+        icon: {fileID: 0}
+        activeUpgradeBackground: {fileID: 21300000, guid: 482d6d1695830f14f94e2b86a5ffcf3b, type: 3}
+        disableUpgradeBackground: {fileID: 21300000, guid: 750813a9feea8ad42b58bf5baed60b2f, type: 3}
+        costIcon: {fileID: 0}
+      - button: {fileID: 0}
+        upgradeType: 1
+        cost: {fileID: 0}
+        upgradeBackground: {fileID: 0}
+        icon: {fileID: 0}
+        activeUpgradeBackground: {fileID: 21300000, guid: 482d6d1695830f14f94e2b86a5ffcf3b, type: 3}
+        disableUpgradeBackground: {fileID: 21300000, guid: 750813a9feea8ad42b58bf5baed60b2f, type: 3}
+        costIcon: {fileID: 0}
+      - button: {fileID: 0}
+        upgradeType: 2
+        cost: {fileID: 0}
+        upgradeBackground: {fileID: 0}
+        icon: {fileID: 0}
+        activeUpgradeBackground: {fileID: 21300000, guid: 482d6d1695830f14f94e2b86a5ffcf3b, type: 3}
+        disableUpgradeBackground: {fileID: 21300000, guid: 750813a9feea8ad42b58bf5baed60b2f, type: 3}
+        costIcon: {fileID: 0}
+      - button: {fileID: 0}
+        upgradeType: 3
+        cost: {fileID: 0}
+        upgradeBackground: {fileID: 0}
+        icon: {fileID: 0}
+        activeUpgradeBackground: {fileID: 21300000, guid: 482d6d1695830f14f94e2b86a5ffcf3b, type: 3}
+        disableUpgradeBackground: {fileID: 21300000, guid: 750813a9feea8ad42b58bf5baed60b2f, type: 3}
+        costIcon: {fileID: 0}
+      weaponSprites:
+      - {fileID: 21300000, guid: b31622a071da0aa459c42dc28a44125e, type: 3}
+      - {fileID: 21300000, guid: ebd6438bca4e42e40afdb3b4a95f326a, type: 3}
+      - {fileID: 21300000, guid: aae24b49c7c43ff4097fa1f3332e4a0b, type: 3}
+      - {fileID: 21300000, guid: 85ea816664e7a5c4e9e42ebea104707a, type: 3}
+      - {fileID: 21300000, guid: 85ea816664e7a5c4e9e42ebea104707a, type: 3}
+      - {fileID: 21300000, guid: 85ea816664e7a5c4e9e42ebea104707a, type: 3}
+      playButton: {fileID: 0}
+      money: {fileID: 0}
+      ammo: {fileID: 0}
+      crosshairCanvas: {fileID: 0}
+      endGameCanvas: {fileID: 0}
+      viewAdButton: {fileID: 0}
+      noThanksButton: {fileID: 0}
+      endGameIcon: {fileID: 0}
+      aboveEndGameIcon: {fileID: 0}
+      loseIconSprite: {fileID: 21300000, guid: c028bd2201bb1854b986ac4f139ae248, type: 3}
+      winIconSprite: {fileID: 21300000, guid: 33f37ac9bc54b264c964cc9206a19536, type: 3}
+      rotatableGlow: {fileID: 0}
+      rotateGlowSpeed: 35
+      progressBarFiller: {fileID: 0}
+      progressBar: {fileID: 0}
+      progressBarLvl: {fileID: 0}
+      collectedMoneyOnRoundMultiplyText: {fileID: 0}
+    environmentDependencies:
+      clouds:
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      cloudMoveSpeed: 0.35
+      cloudRandomMoveSpeedRange: 0.3
+      xStartPoint: -19
+      xEndPoint: 35
+    servicesDependencies:
+      analyticsSecondsTimeInterval: 20
+      sdkKey: Jm907NTlWu7Pw3PubViGho8TN94HZZNXI_noeEAM9yNTg0Qea0GOzodoqGTVtTRt96h2E9xp-p2aptKN1x7HXH
+      bannerId: 019d38ea685e8eb7
+      rewardId: 239fd2edabf0f511
+      interstitialId: 65256dff06bbdaae
+    tutorialDependencies:
+      handContainer: {fileID: 0}
+      pressedHand: {fileID: 21300000, guid: f32b0f032895088438b4f9b12f030d1a, type: 3}
+      idleHand: {fileID: 21300000, guid: 199d008c13ad8ce4291fee6b8f4236cd, type: 3}
+      pixelsHandWalkRange: 175
+      handMoveDuration: 1.13
+      handIdleDuration: 1.96
+      handMoveDelay: 0.24
+      playButton: {fileID: 0}
+      upgradeButton: {fileID: 0}
+      buttonsToDisableOnUpgradePart:
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      minimalMoneyOnUpgradePart: 15
+      fadeDuration: 0.35
+      clickDelay: 1.5
+  save:
+    playerInfo:
+      wallIndex:
+        value: 0
+      money:
+        value: 0
+      timeIndex:
+        value: 0
+      tutorialIndex:
+        value: 0
+      upgrades:
+        data: []
+  savedText: {fileID: 0}
