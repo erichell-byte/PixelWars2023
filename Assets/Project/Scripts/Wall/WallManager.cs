@@ -31,6 +31,8 @@ namespace Wall
 
         private int requiredMinActiveCubesToWin;
 
+        private int wallIndex;
+
         public WallManager(WallConfig wallConfig)
         {
             cubeConfig = wallConfig.cubeConfig;
@@ -40,6 +42,7 @@ namespace Wall
 
             positionOffset = wallConfig.pivot.position;
             cubePool = new CubePool(wallConfig.pivot, cubeConfig);
+            
         }
 
         public void DestroyWall()
@@ -136,6 +139,14 @@ namespace Wall
             float randomYOffset = Random.Range(-wallRotationRandomRange, wallRotationRandomRange);
             Vector3 rotation = new Vector3(0, 0, randomYOffset);
             return rotation;
+        }
+
+        public void IncreaseHealthCubeAtPool()
+        {
+            foreach (var cube in wallCubes)
+            {
+                cube.ChangeDefaultHealth();
+            }
         }
     }
 }

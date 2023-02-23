@@ -9,6 +9,7 @@ namespace Wall
     {
         public GameObject cubePrefab;
         public float defaultHealth;
+        public float coefOfIncreasingHealth;
         public UnityLayer fallCubeLayer;
         public UnityLayer activeCubeLayer;
         public float damageFadeTime;

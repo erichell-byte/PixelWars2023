@@ -16,6 +16,7 @@ public class Language : MonoBehaviour
     public static Language Instance; 
     void Awake()
     {
+#if !UNITY_EDITOR
         if (Instance == null)
         {
             Instance = this;
@@ -28,7 +29,20 @@ public class Language : MonoBehaviour
             Destroy(gameObject);
             
         }
+#elif UNITY_EDITOR
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+
+            currentLanguage = "ru";
+        }
+        else
+        {
+            Destroy(gameObject);
             
+        }
+#endif            
     }
 
     // Update is called once per frame

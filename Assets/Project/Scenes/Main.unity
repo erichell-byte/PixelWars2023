@@ -2298,7 +2298,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa2557ad900e141cbbf03605176e8ec0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentLanguage: 
+  currentLanguage: En
 --- !u!4 &778765225
 Transform:
   m_ObjectHideFlags: 0
@@ -4724,7 +4724,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1380843106}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.057222217, y: -1.3670757, z: -12.280513}
+  m_LocalPosition: {x: -0.057193458, y: -1.3670762, z: -12.280506}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7050,6 +7050,22 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4526066419175691833}
     - target: {fileID: 2103403917935467352, guid: a93974370e75641b7a2d95b6dac73b29, type: 3}
+      propertyPath: save.upgrades.data.Array.data[0].Value
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2103403917935467352, guid: a93974370e75641b7a2d95b6dac73b29, type: 3}
+      propertyPath: save.upgrades.data.Array.data[1].Value
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2103403917935467352, guid: a93974370e75641b7a2d95b6dac73b29, type: 3}
+      propertyPath: save.upgrades.data.Array.data[2].Value
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2103403917935467352, guid: a93974370e75641b7a2d95b6dac73b29, type: 3}
+      propertyPath: save.upgrades.data.Array.data[3].Value
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2103403917935467352, guid: a93974370e75641b7a2d95b6dac73b29, type: 3}
       propertyPath: dependencies.crosshairReferences.camera
       value: 
       objectReference: {fileID: 1630425036}
@@ -7112,43 +7128,43 @@ PrefabInstance:
     - target: {fileID: 2103403917935467352, guid: a93974370e75641b7a2d95b6dac73b29, type: 3}
       propertyPath: dependencies.wallConfig.sprites.Array.data[0]
       value: 
-      objectReference: {fileID: 21300000, guid: 56008d2435e83c4418ae57586a3976fb, type: 3}
+      objectReference: {fileID: 21300000, guid: 82234b1001aa24c4ab59080ceb1a6621, type: 3}
     - target: {fileID: 2103403917935467352, guid: a93974370e75641b7a2d95b6dac73b29, type: 3}
       propertyPath: dependencies.wallConfig.sprites.Array.data[1]
       value: 
-      objectReference: {fileID: 21300000, guid: 6498149a9d5f0da4fa372ce0e6495e4c, type: 3}
+      objectReference: {fileID: 21300000, guid: 56008d2435e83c4418ae57586a3976fb, type: 3}
     - target: {fileID: 2103403917935467352, guid: a93974370e75641b7a2d95b6dac73b29, type: 3}
       propertyPath: dependencies.wallConfig.sprites.Array.data[2]
       value: 
-      objectReference: {fileID: 21300000, guid: 084217eae5bf56c419e71ff5a8a595c8, type: 3}
+      objectReference: {fileID: 21300000, guid: 6498149a9d5f0da4fa372ce0e6495e4c, type: 3}
     - target: {fileID: 2103403917935467352, guid: a93974370e75641b7a2d95b6dac73b29, type: 3}
       propertyPath: dependencies.wallConfig.sprites.Array.data[3]
       value: 
-      objectReference: {fileID: 21300000, guid: d63b8e61c12efa14f866cba17b798823, type: 3}
+      objectReference: {fileID: 21300000, guid: 084217eae5bf56c419e71ff5a8a595c8, type: 3}
     - target: {fileID: 2103403917935467352, guid: a93974370e75641b7a2d95b6dac73b29, type: 3}
       propertyPath: dependencies.wallConfig.sprites.Array.data[4]
       value: 
-      objectReference: {fileID: 21300000, guid: 271aafa49a23c804b9bae9d17d74978c, type: 3}
+      objectReference: {fileID: 21300000, guid: d63b8e61c12efa14f866cba17b798823, type: 3}
     - target: {fileID: 2103403917935467352, guid: a93974370e75641b7a2d95b6dac73b29, type: 3}
       propertyPath: dependencies.wallConfig.sprites.Array.data[5]
       value: 
-      objectReference: {fileID: 21300000, guid: ecfff3106104c0b469f4573c940b36d9, type: 3}
+      objectReference: {fileID: 21300000, guid: 271aafa49a23c804b9bae9d17d74978c, type: 3}
     - target: {fileID: 2103403917935467352, guid: a93974370e75641b7a2d95b6dac73b29, type: 3}
       propertyPath: dependencies.wallConfig.sprites.Array.data[6]
       value: 
-      objectReference: {fileID: 21300000, guid: 865439cf27142402b97d415045529851, type: 3}
+      objectReference: {fileID: 21300000, guid: ecfff3106104c0b469f4573c940b36d9, type: 3}
     - target: {fileID: 2103403917935467352, guid: a93974370e75641b7a2d95b6dac73b29, type: 3}
       propertyPath: dependencies.wallConfig.sprites.Array.data[7]
       value: 
-      objectReference: {fileID: 21300000, guid: 20efbc1420572c7459d63b7f47b18e96, type: 3}
+      objectReference: {fileID: 21300000, guid: 865439cf27142402b97d415045529851, type: 3}
     - target: {fileID: 2103403917935467352, guid: a93974370e75641b7a2d95b6dac73b29, type: 3}
       propertyPath: dependencies.wallConfig.sprites.Array.data[8]
       value: 
-      objectReference: {fileID: 21300000, guid: 5137e7e9b1970f74cb844c80aa3d7fde, type: 3}
+      objectReference: {fileID: 21300000, guid: 20efbc1420572c7459d63b7f47b18e96, type: 3}
     - target: {fileID: 2103403917935467352, guid: a93974370e75641b7a2d95b6dac73b29, type: 3}
       propertyPath: dependencies.wallConfig.sprites.Array.data[9]
       value: 
-      objectReference: {fileID: 21300000, guid: f714c680ddf9240768d8496bd45f1e94, type: 3}
+      objectReference: {fileID: 21300000, guid: 5137e7e9b1970f74cb844c80aa3d7fde, type: 3}
     - target: {fileID: 2103403917935467352, guid: a93974370e75641b7a2d95b6dac73b29, type: 3}
       propertyPath: dependencies.crosshairReferences.handTransform
       value: 
@@ -7156,11 +7172,11 @@ PrefabInstance:
     - target: {fileID: 2103403917935467352, guid: a93974370e75641b7a2d95b6dac73b29, type: 3}
       propertyPath: dependencies.wallConfig.sprites.Array.data[10]
       value: 
-      objectReference: {fileID: 21300000, guid: c6198ba7916667a46828b142caeaada8, type: 3}
+      objectReference: {fileID: 21300000, guid: f714c680ddf9240768d8496bd45f1e94, type: 3}
     - target: {fileID: 2103403917935467352, guid: a93974370e75641b7a2d95b6dac73b29, type: 3}
       propertyPath: dependencies.wallConfig.sprites.Array.data[11]
       value: 
-      objectReference: {fileID: 21300000, guid: 82234b1001aa24c4ab59080ceb1a6621, type: 3}
+      objectReference: {fileID: 21300000, guid: c6198ba7916667a46828b142caeaada8, type: 3}
     - target: {fileID: 2103403917935467352, guid: a93974370e75641b7a2d95b6dac73b29, type: 3}
       propertyPath: dependencies.wallConfig.sprites.Array.data[12]
       value: 
@@ -7266,6 +7282,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8416051279386737671}
     - target: {fileID: 2103403917935467352, guid: a93974370e75641b7a2d95b6dac73b29, type: 3}
+      propertyPath: dependencies.wallConfig.cubeConfig.defaultHealth
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2103403917935467352, guid: a93974370e75641b7a2d95b6dac73b29, type: 3}
       propertyPath: dependencies.converterDependencies.cubeConvertArea
       value: 
       objectReference: {fileID: 1280682155}
@@ -7305,6 +7325,10 @@ PrefabInstance:
       propertyPath: dependencies.environmentDependencies.clouds.Array.data[6]
       value: 
       objectReference: {fileID: 1441099566}
+    - target: {fileID: 2103403917935467352, guid: a93974370e75641b7a2d95b6dac73b29, type: 3}
+      propertyPath: dependencies.wallConfig.cubeConfig.coefOfIncreasingHealth
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2103403917935467352, guid: a93974370e75641b7a2d95b6dac73b29, type: 3}
       propertyPath: dependencies.uiDependencies.collectedMoneyOnRoundMultiplyText
       value: 
@@ -9132,15 +9156,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5216690268975613405, guid: 26be923cbf7489c428d95c4b52aa35f3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.057222217
+      value: -0.057193458
       objectReference: {fileID: 0}
     - target: {fileID: 5216690268975613405, guid: 26be923cbf7489c428d95c4b52aa35f3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.3670757
+      value: -1.3670762
       objectReference: {fileID: 0}
     - target: {fileID: 5216690268975613405, guid: 26be923cbf7489c428d95c4b52aa35f3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -12.280513
+      value: -12.280506
       objectReference: {fileID: 0}
     - target: {fileID: 5216690268975613405, guid: 26be923cbf7489c428d95c4b52aa35f3, type: 3}
       propertyPath: m_LocalRotation.w

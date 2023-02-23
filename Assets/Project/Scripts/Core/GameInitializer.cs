@@ -37,6 +37,8 @@ namespace Core
         private TutorialManager tutorialManager;
         private AdController adController;
 
+        public static int sWallIndex;
+
         private void Awake()
         {
             InitializeSaves();
@@ -69,6 +71,7 @@ namespace Core
         {
             saveLoader = new DataSaveLoader();
             save = saveLoader.LoadData();
+            sWallIndex = save.wallIndex.Value;
         }
 
         public void SetPlayerInfo(string value)
@@ -110,7 +113,7 @@ namespace Core
 
         private void InitializeCubes()
         {
-            wallManager = new WallManager(dependencies.wallConfig);
+            wallManager = new  WallManager(dependencies.wallConfig);
             wallDestroyingObserver = new WallDestroyingObserver(wallManager);
 
             LoadWallFromSave();
@@ -164,12 +167,12 @@ namespace Core
             // GameEvents.CubeFalled.Event += cube => cornerFollower.TrySetNewCorner(cube.GetPosition());
             
             GameEvents.CubeFalled.Event += wallDestroyingObserver.RegisterCubeFall;
-            
             // GameEvents.GameEndedByLose.Event += cornerFollower.ResetToDefaultPosition;
             GameEvents.GameEndedByLose.Event += wallManager.ResetCubes;
             GameEvents.GameEndedByLose.Event += wallDestroyingObserver.Reset;
 
             GameEvents.GameEndedByWin.Event += () => save.wallIndex.Value++;
+            GameEvents.GameEndedByWin.Event += () => sWallIndex++;
             GameEvents.GameEndedByWin.Event += wallDestroyingObserver.Reset;
             // GameEvents.GameEndedByWin.Event += cornerFollower.ResetToDefaultPosition;
 
@@ -177,6 +180,7 @@ namespace Core
             {
                 if (newWallIndex != loadedWallIndex)
                     LoadWallFromSave();
+                
             };
             
             AmmoTracker ammoTracker = new AmmoTracker(weaponManager.playingBullets);
@@ -215,10 +219,10 @@ namespace Core
             wallManager.farCameraCorner = Vector2.zero;
             Sprite sprite = dependencies.wallConfig.sprites[save.wallIndex.Value % dependencies.wallConfig.sprites.Count];
             wallManager.SpawnCubes(sprite);
-            
+            wallManager.IncreaseHealthCubeAtPool();
+
             if (cornerFollower != null)
                 cornerFollower.SetNewCorner(wallManager.farCameraCorner);
-            Debug.Log(wallManager.farCameraCorner);
         }
 
         private IEnumerator SendAnalyticsTimeEvents()

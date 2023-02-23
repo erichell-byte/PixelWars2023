@@ -23,7 +23,7 @@ namespace Wall
         private void DragAllCubesInPoint()
         {
             for (int i = 0; i < cubes.Count; i++)
-                cubes[i].AddForce((gravityCenter.position - cubes[i].GetPosition()).normalized * force * Time.deltaTime, ForceMode.Force);
+                cubes[i].AddForce((gravityCenter.position - cubes[i].GetPosition()).normalized * (force * Time.deltaTime), ForceMode.Force);
         }
     }
 }

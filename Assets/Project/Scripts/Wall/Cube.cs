@@ -27,6 +27,8 @@ namespace Wall
         private Color damagedColor;
         private Vector3 savedPosition;
         private float colorDamagePercent;
+        private float coefOfIncreaseHealth;
+        public float maxHealth;
 
         private Sequence damageAnimationSequence;
         
@@ -41,12 +43,23 @@ namespace Wall
             idleTime = cubeConfig.damageIdleTime;
             damagedColor = cubeConfig.targetDamageColor;
             colorDamagePercent = cubeConfig.playingDamageColorPercent;
-
-            defaultHealth = cubeConfig.defaultHealth;
+            
             activeLayer = cubeConfig.activeCubeLayer;
             fallLayer = cubeConfig.fallCubeLayer;
+
+            defaultHealth = cubeConfig.defaultHealth;
+            coefOfIncreaseHealth = cubeConfig.coefOfIncreasingHealth;
+            maxHealth = defaultHealth + (coefOfIncreaseHealth * GameInitializer.sWallIndex);
+
         }
 
+        public void ChangeDefaultHealth()
+        {
+            maxHealth = defaultHealth + (coefOfIncreaseHealth * GameInitializer.sWallIndex);
+            health = maxHealth;
+            Debug.Log(maxHealth);
+        }
+        
         public void Hide()
         {
             gameObject.SetActive(false);
@@ -73,7 +86,8 @@ namespace Wall
         {
             transform.position = savedPosition;
             transform.rotation = savedRotation;
-            health = defaultHealth;
+            health = maxHealth;
+            
             
             SetActive();
             Show();

@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using Core;
 using Extensions;
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Wall
@@ -11,6 +13,9 @@ namespace Wall
         private List<Cube> createdCubes = new List<Cube>();
         private CubeConfig cubeConfig;
         private Transform pivot;
+
+        private int wallIndex;
+        
         
         public CubePool(Transform parent, CubeConfig cubeConfig, int startCount = 100)
         {
@@ -20,8 +25,14 @@ namespace Wall
             {
                 IncreasePool();
             }
-
+            
             pivot = parent;
+            
+            //For initializations cube health
+            GameEvents.GameEndedByWin.Event += IncreaseWallIndex;
+
+            this.wallIndex = wallIndex;
+
         }
 
         public Cube Pull()
@@ -34,6 +45,11 @@ namespace Wall
             cubesPool.Remove(cube);
             
             return cube;
+        }
+
+        public void IncreaseWallIndex()
+        {
+            wallIndex++;
         }
 
         public void Pop(Cube cube)
@@ -65,5 +81,7 @@ namespace Wall
                 Debug.Log("wtf");
             }
         }
+
+        
     }
 }
